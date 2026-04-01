@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>王久畅的空间</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <main class="container">
+    <section class="hero-card">
+      <p class="tag">PERSONAL SPACE</p>
+      <h1>王久畅的空间</h1>
+      <p class="subtitle">
+        一个简洁、前卫的个人主页。点击下方按钮可快速访问相关学校官网。
+      </p>
+
+      <div class="button-group">
+        <a
+          class="nav-btn"
+          href="https://www.ppsuc.edu.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="recordClick('中国人民公安大学官网')"
+        >
+          进入中国人民公安大学官网
+        </a>
+
+        <a
+          class="nav-btn secondary"
+          href="http://www.xz1z.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="recordClick('徐州市第一中学官网')"
+        >
+          进入徐州市第一中学官网
+        </a>
+      </div>
+    </section>
+
+    <section class="log-card">
+      <div class="log-header">
+        <h2>本地访问日志</h2>
+        <button class="clear-btn" onclick="clearLogs()">清空日志</button>
+      </div>
+      <p class="log-tip">
+        说明：这里记录的是当前浏览器中的访问与点击信息，仅用于前端演示，不是服务器端全站日志。
+      </p>
+      <ul id="logList" class="log-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
